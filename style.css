@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*--------------------------------------------------HEADER-----------------------------------------------------------*/
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)),url(images/banner1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+
+#logo {
+    width: 160px;
+}
+
+
+.login-btn {
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.header-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 260px;
+    color: #fff;
+}
+
+
+.header-text h1 {
+    font-family: 'Courgette', sans-serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+
+.header-text p {
+    margin-bottom: 10px;
+}
+
+
+.input-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header-text input {
+    padding: 10px 280px 10px 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+
+.search-btn {
+    display: inline-block;
+    padding: 9px 14px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: none;
+    border: 1px solid #fff;
+    background: linear-gradient(#d4e09b, #415a77);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/*----------------------------------------------------fEATURED DESTINATIONS------------------------------------------------------------*/
+
+
+#destination {
+    margin: 100px 0;
+}
+
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+
+.small-container h1 {
+    text-align: center;
+    font-family: 'Courgette', sans-serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.col-3 {
+    flex-basis: 30%;
+}
+
+
+.col-3 img {
+    width: 340px;
+}
+
+
+
+
+
+.card {
+    width: 340px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: relative;
+}
+
+
+.card p {
+    font-size: 13px;
+    line-height: 22px;
+    margin: 10px 0;
+}
+
+
+.price span {
+    position: absolute;
+    left: 20px;
+    top: -30px;
+    background: #fb8500;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+
+.ratings {
+    position: absolute;
+    left: 263px;
+    top: -25px;
+    font-size: 10px;
+    color: #fb8500;
+    background: #fff;
+    padding: 5px;
+}
+
+
+.locations i {
+    color: #fb8500;
+    font-size: 12px;
+}
+
+
+
+/*--------------------------------------------------GALLERY--------------------------------------------------------*/
+
+
+
+#gallery {
+    margin: 100px 0 0;
+    background: #f2e9e4;
+    padding: 100px 0;
+}
+
+
+.col-4 {
+    flex-basis: 23%;
+    position: relative;
+}
+
+
+.col-4 img {
+    width: 100%;
+    /*max-width: 260px;*/
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+
+
+.col-4 img:hover {
+    width: 102%;
+}
+
+
+.col-4 p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 800;
+}
+
+
+
+
+/*---------------------------------------------------DISCOUNTS------------------------------------------------------*/
+
+#discount {
+    width: 100%;
+    height: 80vh;
+    background-image: url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+
+.promotion {
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8));
+    color: #fff;
+    margin: auto;
+}
+
+
+.smaller-container {
+    max-width: 1080px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+}
+
+
+.row-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+.col-2 {
+   flex-basis: 50%; 
+   text-align: center;
+}
+
+
+.col-2 h3 {
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+
+.col-2 p {
+    font-size: 12px;
+}
+
+
+
+/*----------------------------------------------------REVIEW-----------------------------------------------------*/
+
+
+#review {
+    margin: 100px 0;
+}
+
+
+.review-card {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 14px 14px 50px;
+    text-align: center;
+    min-width: 340px;
+}
+
+
+.review-card p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px 0 20px;
+}
+
+
+.review-card h3 {
+    font-size: 18px;
+}
+
+
+.review-card small {
+    font-size: 12px;
+    
+}
+
+
+.review-card i {
+    color: #00bbf9;
+}
+
+
+/*------------------------------------------------------------FOOTER----------------------------------------*/
+
+
+footer {
+    padding: 150px 0 40px;
+    background: linear-gradient(#03045e, #7209b7);
+    color: #fff;
+}
+
+
+.summary p {
+    
+}
+
+
+.footer-4 p {
+    font-size: 10px;
+}
+
+
+.features p {
+    margin: 10px 0;
+}
+
+
+.footer-4 {
+    flex-basis: 23%;
+    align-items: start;
+}
+
+
+footer h4 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+
+footer span {
+    font-size: 10px;
+}
+
+
+.contacts {
+    display: flex;
+    margin: 10px 0;
+}
+
+
+.contacts p {
+    margin-left: 8px;
+}
+
+
+.socials {
+    display: flex;
+    margin: 10px 0;
+}
+
+
+.socials p {
+    margin-left: 8px;
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+
+/*--------------------------------------------MOBILE SCREEN-----------------------------------------*/
+
+
+
+@media screen and (max-width: 780px) {
+    nav {
+        width: 100%;
+    }
+
+
+    .header-text {
+        margin-top: 140px;
+    }
+
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+
+    .header-text p {
+        font-size: 14px;
+    }
+
+
+    .header-text input {
+        padding: 10px 100px 10px 10px;
+    }
+
+
+    .col-3 {
+        margin-bottom: 40px;
+    }
+
+
+    .col-4 {
+        flex-basis: 80%;
+        margin-bottom: 40px;
+    }
+
+
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+
+    .footer-4 {
+        flex-basis: 100%;
+        padding: 20px;
+    }
+        
+
+
+
+}
+
+{}
